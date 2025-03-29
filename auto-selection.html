@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalina Auto Group</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <div class="logo-container">
+        <a href="index.html">
+          <img class="logo" src="./img/logo.svg" alt="logo" />
+        </a>
+      </div>
+      <div class="header__menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="header__nav">
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="index.html">Главная</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="about.html">О нас</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link active" href="auto-selection.html">Авто-подбор</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="catalog.html">Каталог</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="logistics.html">Логистика</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="auto-parts.html">Запчасти</a>
+        </li>
+        <li class="header__nav-item">
+          <a
+            class="header__nav-link"
+            onclick="scrollToSection('.footer__contact')"
+            >Контакты</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+    <section class="hero--auto-selection section">
+      <div class="container">
+        <div class="hero--auto-selection__inner">
+          <h1
+            class="hero--auto-selection__title wow animate__animated animate__fadeInLeft"
+            data-wow-delay="0"
+            data-wow-duration="1s"
+          >
+            ИНДИВИДУАЛЬНЫЙ ПОДБОР АВТО ИЗ ЕС и КАНАДЫ
+          </h1>
+          <p
+            class="hero--auto-selection__description wow animate__animated animate__fadeInLeft"
+            data-wow-delay="0.3s"
+            data-wow-duration="1s"
+          >
+            Экономия от 20 до 40% от рыночной стоимости в РФ
+          </p>
+
+          <button
+            class="hero--auto-selection__button wow animate__animated animate__fadeInLeft"
+            data-wow-delay="0.6s"
+            data-wow-duration="1s"
+            data-modal
+          >
+            ПОДОБРАТЬ АВТО
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="offers section">
+      <div class="container">
+        <div class="offers__inner">
+          <div class="offers__left">
+            <img loading="lazy"
+              class="offers__img"
+              src="./img/phone-mockup.png"
+              alt="phone mockup"
+            />
+          </div>
+          <div class="offers__info">
+            <h2 class="offers__title">ЕЖЕДНЕВНЫЕ ПРЕДЛОЖЕНИЯ ПО АВТО ИЗ ЕС</h2>
+            <p class="offers__description">
+              Вы можете получить самые выгодные предложения по авто из Европы,
+              присоединившись к нам в Telegram. Не упустите возможность самой
+              выгодной сделки!
+            </p>
+            <h3 class="offers__subtitle">Присоединяйтесь уже сейчас!</h3>
+            <button class="offers__button">
+              <img loading="lazy"
+                class="offers__button-icon"
+                src="./img/telegram.svg"
+                alt="telegram"
+              />
+              <span class="offers__button-text">Telegram</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="profit section">
+      <div class="profit__wrapper">
+        <div class="container">
+          <div class="profit__inner">
+            <div class="profit__title-block">
+              <h2 class="profit__title">Плюсы автоподбора автомобилей из ЕС</h2>
+              <img loading="lazy"
+                src="./img/profit-car.png"
+                alt="Toyota RAV4"
+                class="profit__image wow animate__animated animate__slideInLeft"
+                data-wow-delay="0.2s"
+                data-wow-duration="1.5s"
+              />
+            </div>
+
+            <div class="profit__list">
+              <div class="profit__item">
+                <h3 class="profit__item-title">Цена</h3>
+                <p class="profit__item-text">
+                  Часто можно найти более выгодные предложения по сравнению с
+                  местным рынком.
+                </p>
+              </div>
+
+              <div class="profit__item">
+                <h3 class="profit__item-title">Широкий выбор</h3>
+                <p class="profit__item-text">
+                  В Европе представлен большой ассортимент автомобилей различных
+                  марок и моделей, часто с уникальными конфигурациями, которые
+                  сложно найти в РФ.
+                </p>
+              </div>
+
+              <div class="profit__item">
+                <h3 class="profit__item-title">Честная история</h3>
+                <p class="profit__item-text">
+                  В ЕС существуют строгие законы по ведению истории обслуживания
+                  и аварий автомобилей, что позволяет получить точную информацию
+                  о состоянии машины.
+                </p>
+              </div>
+
+              <div class="profit__item">
+                <h3 class="profit__item-title">Качество дорог</h3>
+                <p class="profit__item-text">
+                  Качество дорог напрямую влияет на износ автомобиля. В Европе
+                  состояние дорожного полотна находится на высочайшем уровне,
+                  что регулярно контролируется.
+                </p>
+              </div>
+
+              <div class="profit__item">
+                <h3 class="profit__item-title">Техническое состояние</h3>
+                <p class="profit__item-text">
+                  Европейские автомобили проходят регулярные техосмотры и часто
+                  находятся в хорошем состоянии.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="features section">
+      <div class="container">
+        <div class="features__inner">
+          <div class="features__item">
+            <h2 class="features__title">35 дней</h2>
+            <p class="features__description">
+              Самая быстрая доставка в РФ среди конкурентов
+            </p>
+          </div>
+          <div class="features__item">
+            <h2 class="features__title">Более 40</h2>
+            <p class="features__description">
+              Единиц техники для разгрузки, перевозки и обслуживания контейнеров
+              и автомобилей
+            </p>
+          </div>
+          <div class="features__item">
+            <h2 class="features__title">
+              70 <span style="font-family: 'Montserrat', sans-serif">+</span>
+            </h2>
+            <p class="features__description">
+              Сотрудников компании, готовых Вам помочь
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="personal section">
+      <div class="personal__wrapper">
+        <div class="container">
+          <div class="personal__inner">
+            <div class="personal__title-block">
+              <h2 class="personal__title">
+                Персональный автоподбор  помогает найти и приобрести
+                <span class="personal__title--accent"
+                  >автомобиль по вашим требованиям</span
+                >
+              </h2>
+              <img loading="lazy"
+                src="./img/personal-selection.png"
+                alt=""
+                class="personal__image"
+              />
+            </div>
+
+            <div class="personal__list">
+              <div
+                class="personal__item wow animate__animated animate__fadeInRight"
+                data-wow-delay="0"
+                data-wow-duration="1s"
+              >
+                <h3 class="personal__item-title">
+                  <span class="personal__item-title--number">01</span>
+                  КОНСУЛЬТАЦИЯ
+                </h3>
+                <p class="personal__item-text">
+                  Определение нужд и бюджета, тип автомобиля, желаемые
+                  характеристики и дополнительные опции.
+                </p>
+              </div>
+
+              <div
+                class="personal__item wow animate__animated animate__fadeInRight"
+                data-wow-delay="0.2s"
+                data-wow-duration="1s"
+              >
+                <h3 class="personal__item-title">
+                  <span class="personal__item-title--number">02</span>
+                  ПОИСК
+                </h3>
+                <p class="personal__item-text">
+                  Подбор автомобилей на основе критериев клиента. Может включать
+                  новые, подержанные автомобили, а также поиск в диллерских
+                  центрах и на частных платформах.
+                </p>
+              </div>
+
+              <div
+                class="personal__item wow animate__animated animate__fadeInRight"
+                data-wow-delay="0.4s"
+                data-wow-duration="1s"
+              >
+                <h3 class="personal__item-title">
+                  <span class="personal__item-title--number">03</span>
+                  ПРОВЕРКА
+                </h3>
+                <p class="personal__item-text">
+                  Тщательная проверка технического состояния , истории его
+                  эксплуатации и юридической чистоты.
+                </p>
+              </div>
+
+              <div
+                class="personal__item wow animate__animated animate__fadeInRight"
+                data-wow-delay="0.6s"
+                data-wow-duration="1s"
+              >
+                <h3 class="personal__item-title">
+                  <span class="personal__item-title--number">04</span>
+                  ПЕРЕГОВОРЫ
+                </h3>
+                <p class="personal__item-text">
+                  Ведение переговоров с продавцами для достижения наилучших
+                  условий покупки, включая цену и дополнительные услуги
+                  (гарантии, страховка и т.д.).
+                </p>
+              </div>
+
+              <div
+                class="personal__item wow animate__animated animate__fadeInRight"
+                data-wow-delay="0.8s"
+                data-wow-duration="1s"
+              >
+                <h3 class="personal__item-title">
+                  <span class="personal__item-title--number">05</span>
+                  СОПРОВОЖДЕНИЕ
+                </h3>
+                <p class="personal__item-text">
+                  Помощь в оформлении всех необходимых документов.
+                </p>
+              </div>
+
+              <div
+                class="personal__item wow animate__animated animate__fadeInRight"
+                data-wow-delay="1s"
+                data-wow-duration="1s"
+              >
+                <h3 class="personal__item-title">
+                  <span class="personal__item-title--number">06</span>
+                  ДОП. СЕРВИС
+                </h3>
+                <p class="personal__item-text">Консультации по эксплуатации.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="buy section">
+      <div class="container buy__outer">
+        <div class="buy__inner">
+          <div class="buy__header">
+            <h2 class="buy__title">Актуальные предложения</h2>
+            <div class="buy__nav">
+              <button class="buy__nav-btn buy__nav-btn--prev">
+                <!-- SVG-иконка "предыдущий" -->
+                <svg
+                  width="800px"
+                  height="800px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke="currentColor"
+                    stroke-width="0.048"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M15 7L10 12L15 17"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                </svg>
+              </button>
+
+              <button class="buy__nav-btn buy__nav-btn--next">
+                <!-- SVG-иконка "следующий" с отражением -->
+                <svg
+                  width="800px"
+                  height="800px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  transform="matrix(-1, 0, 0, -1, 0, 0)"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke="currentColor"
+                    stroke-width="0.048"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M15 7L10 12L15 17"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Swiper слайдер -->
+          <div class="buy__slider swiper">
+            <div class="swiper-wrapper">
+              <!-- Слайд 1 -->
+              <div class="buy__item swiper-slide">
+                <div class="img-container">
+                  <img loading="lazy"
+                    src="./img/catalog/bmw-i3.jpg"
+                    alt="Audi A5 2.0T 4x4 45 TFSI"
+                  />
+                </div>
+                <h3 class="buy__item-title">Audi A5 2.0T 4x4 45 TFSI</h3>
+                <div class="car-details">
+                  <div class="car-info">
+                    <div class="car-meta">
+                      <div class="meta-item">
+                        <img loading="lazy"
+                          src="./img/calendar.svg"
+                          alt="Год"
+                          class="meta-icon"
+                        />
+                        <span class="meta-text">2018</span>
+                      </div>
+                      <div class="meta-item">
+                        <img loading="lazy"
+                          src="./img/gas-pump.svg"
+                          alt="Топливо"
+                          class="meta-icon"
+                        />
+                        <span class="meta-text">бензин</span>
+                      </div>
+                      <div class="meta-item">
+                        <img loading="lazy"
+                          src="./img/track.svg"
+                          alt="Пробег"
+                          class="mileage-icon"
+                        />
+                        <span class="meta-text">59 600 км</span>
+                      </div>
+                    </div>
+
+                    <div class="info-columns">
+                      <!-- Колонка "НА РЫНКЕ" -->
+                      <div class="info-column">
+                        <h4 class="info-title">НА РЫНКЕ</h4>
+                        <p class="info-subtitle">Цена</p>
+                        <p class="info-item">2.420.000₽</p>
+                      </div>
+                      <!-- Колонка "ПОД ЗАКАЗ" -->
+                      <div class="info-column">
+                        <h4 class="info-title">ПОД ЗАКАЗ</h4>
+                        <p class="info-subtitle">Цена</p>
+                        <p class="info-item">от 1.800.000₽</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="economy-container">
+                    <div class="economy-text">
+                      <p class="economy-label">Экономия</p>
+                      <p class="economy-percentage">28%</p>
+                    </div>
+                    <button
+                      class="order-btn"
+                      onclick="location.href='https://t.me/+SGfJcFqbrTM2YTBi'"
+                    >
+                      Заказать
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Слайд 2 -->
+              <div class="buy__item swiper-slide">
+                <div class="img-container">
+                  <img loading="lazy" src="./img/catalog/volkswagen.jpg" alt="Ford S-Max" />
+                </div>
+                <h3 class="buy__item-title">Ford S-Max</h3>
+                <div class="car-details">
+                  <div class="car-info">
+                    <div class="car-meta">
+                      <div class="meta-item">
+                        <img loading="lazy"
+                          src="./img/calendar.svg"
+                          alt="Год"
+                          class="meta-icon"
+                        />
+                        <span class="meta-text">2016</span>
+                      </div>
+                      <div class="meta-item">
+                        <img loading="lazy"
+                          src="./img/gas-pump.svg"
+                          alt="Топливо"
+                          class="meta-icon"
+                        />
+                        <span class="meta-text">дизель</span>
+                      </div>
+                      <div class="meta-item">
+                        <img loading="lazy"
+                          src="./img/track.svg"
+                          alt="Пробег"
+                          class="mileage-icon"
+                        />
+                        <span class="meta-text">225 000 км</span>
+                      </div>
+                    </div>
+
+                    <div class="info-columns">
+                      <!-- Колонка "НА РЫНКЕ" -->
+                      <div class="info-column">
+                        <h4 class="info-title">НА РЫНКЕ</h4>
+                        <p class="info-subtitle">Цена</p>
+                        <p class="info-item">1.170.000₽</p>
+                      </div>
+                      <!-- Колонка "ПОД ЗАКАЗ" -->
+                      <div class="info-column">
+                        <h4 class="info-title">ПОД ЗАКАЗ</h4>
+                        <p class="info-subtitle">Цена</p>
+                        <p class="info-item">от 800.000₽</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="economy-container">
+                    <div class="economy-text">
+                      <p class="economy-label">Экономия</p>
+                      <p class="economy-percentage">32%</p>
+                    </div>
+                    <button
+                      class="order-btn"
+                      onclick="location.href='https://t.me/+SGfJcFqbrTM2YTBi'"
+                    >
+                      Заказать
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Слайд 3 -->
+              <div class="buy__item swiper-slide">
+                <div class="img-container">
+                  <img loading="lazy" src="./img/catalog/honda.jpg" alt="Citroen C3" />
+                </div>
+                <h3 class="buy__item-title">Citroen C3</h3>
+                <div class="car-details">
+                  <div class="car-info">
+                    <div class="car-meta">
+                      <div class="meta-item">
+                        <img loading="lazy"
+                          src="./img/calendar.svg"
+                          alt="Год"
+                          class="meta-icon"
+                        />
+                        <span class="meta-text">2016</span>
+                      </div>
+                      <div class="meta-item">
+                        <img loading="lazy"
+                          src="./img/gas-pump.svg"
+                          alt="Топливо"
+                          class="meta-icon"
+                        />
+                        <span class="meta-text">дизель</span>
+                      </div>
+                      <div class="meta-item">
+                        <img loading="lazy"
+                          src="./img/track.svg"
+                          alt="Пробег"
+                          class="mileage-icon"
+                        />
+                        <span class="meta-text">89 123 км</span>
+                      </div>
+                    </div>
+
+                    <div class="info-columns">
+                      <!-- Колонка "НА РЫНКЕ" -->
+                      <div class="info-column">
+                        <h4 class="info-title">НА РЫНКЕ</h4>
+                        <p class="info-subtitle">Цена</p>
+                        <p class="info-item">760.000₽</p>
+                      </div>
+                      <!-- Колонка "ПОД ЗАКАЗ" -->
+                      <div class="info-column">
+                        <h4 class="info-title">ПОД ЗАКАЗ</h4>
+                        <p class="info-subtitle">Цена</p>
+                        <p class="info-item">от 600.000₽</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="economy-container">
+                    <div class="economy-text">
+                      <p class="economy-label">Экономия</p>
+                      <p class="economy-percentage">26%</p>
+                    </div>
+                    <button
+                      class="order-btn"
+                      onclick="location.href='https://t.me/+SGfJcFqbrTM2YTBi'"
+                    >
+                      Заказать
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Слайд 4 -->
+              <div class="buy__item swiper-slide">
+                <div class="img-container">
+                  <img loading="lazy"
+                    src="./img/catalog/kia-sportage-2019.jpg"
+                    alt="Kia Sportage 1.6T GDI AWD GT Line"
+                  />
+                </div>
+                <h3 class="buy__item-title">
+                  Kia Sportage 1.6T GDI AWD GT Line
+                </h3>
+                <div class="car-details">
+                  <div class="car-info">
+                    <div class="car-meta">
+                      <div class="meta-item">
+                        <img loading="lazy"
+                          src="./img/calendar.svg"
+                          alt="Год"
+                          class="meta-icon"
+                        />
+                        <span class="meta-text">2019</span>
+                      </div>
+                      <div class="meta-item">
+                        <img loading="lazy"
+                          src="./img/gas-pump.svg"
+                          alt="Топливо"
+                          class="meta-icon"
+                        />
+                        <span class="meta-text">бензин</span>
+                      </div>
+                      <div class="meta-item">
+                        <img loading="lazy"
+                          src="./img/track.svg"
+                          alt="Пробег"
+                          class="mileage-icon"
+                        />
+                        <span class="meta-text">85 500 км</span>
+                      </div>
+                    </div>
+
+                    <div class="info-columns">
+                      <!-- Колонка "НА РЫНКЕ" -->
+                      <div class="info-column">
+                        <h4 class="info-title">НА РЫНКЕ</h4>
+                        <p class="info-subtitle">Цена</p>
+                        <p class="info-item">1.490.000₽</p>
+                      </div>
+                      <!-- Колонка "ПОД ЗАКАЗ" -->
+                      <div class="info-column">
+                        <h4 class="info-title">ПОД ЗАКАЗ</h4>
+                        <p class="info-subtitle">Цена</p>
+                        <p class="info-item">от 1.100.000₽</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="economy-container">
+                    <div class="economy-text">
+                      <p class="economy-label">Экономия</p>
+                      <p class="economy-percentage">32%</p>
+                    </div>
+                    <button
+                      class="order-btn"
+                      onclick="location.href='https://t.me/+SGfJcFqbrTM2YTBi'"
+                    >
+                      Заказать
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-controls">
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <a href="catalog.html">
+          <button class="buy-catalog__button">Посмотреть каталог</button>
+        </a>
+      </div>
+    </section>
+
+    
+
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__contact">
+        <h2 class="footer__contact-title">Контакты</h2>
+        <div class="footer__contact-info">
+          <div class="footer__contact-item">
+            <h3 class="footer__contact-subtitle">Телефон</h3>
+            <a class="footer__contact-description" href="tel:+79800000000">+7 (980) 000-00-00</a>
+          </div>
+          <div class="footer__contact-item">
+            <h3 class="footer__contact-subtitle">E-MAIL</h3>
+            <a class="footer__contact-description" href="mailto:kalinaautogroup@gmail.com">kalinaautogroup@gmail.com</a>
+          </div>
+          <div class="footer__contact-item">
+            <h3 class="footer__contact-subtitle">АДРЕС</h3>
+            <address class="footer__contact-description">
+              г. Казань, ул. Большая Невская, 65, офис 4
+            </address>
+          </div>
+        </div>
+        <ul class="footer__contact-list">
+          <li class="footer__contact-item">
+            <a class="footer__contact-link" href="#">
+              <img src="./img/telegram.svg" alt="telegram" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__form">
+        <h2 class="footer__form-title">СВЯЖИТЕСЬ С НАМИ</h2>
+        <p class="footer__form-description">
+          Заполните форму, чтобы получить консультацию нашего менеджера
+        </p>
+        <form>
+          <div class="form__group">
+            <div class="form__group-item">
+              <label for="footer-name">Ваше имя*</label>
+              <input
+                class="form__input"
+                id="footer-name"
+                type="text"
+                name="name"
+                placeholder="Ваше имя"
+                required
+              />
+            </div>
+            <div class="form__group-item">
+              <label for="footer-phone">Ваш номер телефона*</label>
+              <input
+                class="form__input phone-input"
+                id="footer-phone"
+                type="text"
+                name="phone"
+                placeholder="+7 (___) ___-__-__"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form__group">
+            <div class="form__group-comment">
+              <label for="footer-comment">Комментарий</label>
+              <textarea
+                class="form__textarea"
+                id="footer-comment"
+                name="comment"
+                placeholder="Комментарий"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="form__group">
+            <button class="form__button" type="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <div class="modal__content">
+      <button class="modal__close" id="modalClose">&times;</button>
+      <div class="modal__form">
+        <h2 class="modal__form-title">СВЯЖИТЕСЬ С НАМИ</h2>
+        <p class="modal__form-description">
+          Заполните форму, чтобы получить консультацию нашего менеджера
+        </p>
+        <form>
+          <div class="modal__form-group">
+            <div class="modal__form-item">
+              <label for="modal-name">Ваше имя*</label>
+              <input
+                class="modal__input"
+                id="modal-name"
+                type="text"
+                name="name"
+                placeholder="Ваше имя"
+                required
+              />
+            </div>
+          </div>
+          <div class="modal__form-group">
+            <div class="modal__form-item">
+              <label for="modal-phone">Ваш номер телефона*</label>
+              <input
+                class="modal__input phone-input"
+                id="modal-phone"
+                type="text"
+                name="phone"
+                placeholder="+7 (___) ___-__-__"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="modal__form-group">
+            <div class="modal__form-item">
+              <label for="modal-budget">Примерный бюджет на покупку авто*</label>
+              <input
+                class="modal__input"
+                id="modal-budget"
+                type="text"
+                name="budget"
+                required
+                placeholder="Ориентировочная сумма"
+              />
+            </div>
+          </div>
+
+          <div class="modal__form-group">
+            <div class="modal__form-item">
+              <label for="modal-car-model">Желаемая модель авто*</label>
+              <input
+                class="modal__input"
+                id="modal-car-model"
+                type="text"
+                name="model"
+                required
+                placeholder="Желаемая модель (оставьте пустым, если не определились)"
+              />
+            </div>
+          </div>
+
+          <div class="modal__form-group">
+            <div class="modal__form-comment">
+              <label for="modal-comment">Комментарий</label>
+              <textarea
+                class="modal__textarea"
+                id="modal-comment"
+                name="comment"
+                placeholder="Комментарий"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="modal__form-group">
+            <button class="modal__button" type="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="resultModal" class="result-modal">
+  <div class="result-modal__content">
+    <span id="resultModalClose" class="result-modal__close">&times;</span>
+    <div class="modal-result__icon">
+      <!-- Здесь можно использовать иконку FontAwesome (галочка) или встроенный SVG -->
+      <i class="fas fa-check-circle"></i>
+    </div>
+    <p id="resultModalMessage"></p>
+  </div>
+</div>
+
+
+    <button id="scrollToTop" class="scroll-to-top" title="Наверх">⮝</button>
+    <div class="phone-icon" id="phoneIcon">
+      <img loading="lazy" src="./img/phone.png" />
+    </div>
+
+    <!-- PhoneMusk -->
+    <script src="https://unpkg.com/imask"></script>
+    <!-- WOW.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/openModal.js"></script>
+    <script src="./js/index.bundle.js"></script>
+  </body>
+</html>

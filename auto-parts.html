@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalina Auto Group</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <div class="logo-container">
+        <a href="index.html">
+          <img class="logo" src="./img/logo.svg" alt="logo" />
+        </a>
+      </div>
+      <div class="header__menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="header__nav">
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="index.html">Главная</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="about.html">О нас</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="auto-selection.html">Авто-подбор</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="catalog.html">Каталог</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="logistics.html">Логистика</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link active" href="auto-parts.html">Запчасти</a>
+        </li>
+        <li class="header__nav-item">
+          <a
+            class="header__nav-link"
+            onclick="scrollToSection('.footer__contact')"
+            >Контакты</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+
+    <section class="hero--auto-parts section">
+      <div class="container">
+        <div class="hero--auto-parts__inner">
+          <h1
+            class="hero--auto-parts__title wow animate__animated animate__fadeInRight"
+            data-wow-delay="0"
+            data-wow-duration="1s"
+          >
+            Автозапчасти
+          </h1>
+          <p
+            class="hero--auto-parts__description wow animate__animated animate__fadeInRight"
+            data-wow-delay="0.3s"
+            data-wow-duration="1s"
+          >
+            Доставка запчастей для автомобиля любой марки по Вашему запросу
+          </p>
+          <button
+            class="hero--auto-parts__button wow animate__animated animate__fadeInRight"
+            data-wow-delay="0.6s"
+            data-wow-duration="1s"
+            onclick="scrollToSection('.order__form')"
+          >
+            Заказать
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="auto-parts section">
+      <div class="auto-parts__container">
+        <div class="auto-parts__inner">
+          <div class="auto-parts__info">
+            <h2 class="auto-parts__title">АВТОЗАПЧАСТИ ПОД ЗАКАЗ</h2>
+            <p class="auto-parts__description">
+              Компания Kalina Auto Group предлагает нашим клиентам сервис по
+              заказу и доставке автомобильных запчастей по максимально выгодной
+              цене. Независимо от бюджета, каждый автовладелец сможет заказать
+              все необходимое для ремонта и ТО.
+              <br /><br />
+              Наши менеджеры найдут любую необходимую деталь для Вашего авто и
+              сделают все, чтобы Вы получили ее как можно скорее!
+            </p>
+            <button class="auto-parts__button" onclick="scrollToSection('.order__form')">Заказать</button>
+          </div>
+          <img loading="lazy"
+            class="auto-parts__image"
+            src="./img/about-history.jpg"
+            alt="about history"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="find section">
+      <div class="container">
+        <div class="find__inner">
+          <h2 class="find__title">НАЙДЕМ ЛЮБУЮ ДЕТАЛЬ ПО:</h2>
+          <ul class="find__list">
+            <li class="find__list-item"><h2>по наименованию детали</h2></li>
+            <li class="find__list-item"><h2>по vin-коду</h2></li>
+            <li class="find__list-item"><h2>по марке и модели авто</h2></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="types section">
+      <div class="container">
+        <div class="types__inner">
+          <h2 class="types__title">Какие детали вы можете заказать?</h2>
+          <div class="types__cards">
+            <div
+              class="types__card wow animate__animated animate__fadeInLeft"
+              data-wow-delay="0"
+              data-wow-duration="1s"
+            >
+              <div class="types__card-icon">
+                <img loading="lazy" src="./img/shock-absorber.png" />
+              </div>
+              <div class="types__card-body">
+                <h3 class="types__card-title">ЗАПЧАСТИ</h3>
+                <p class="types__card-description">
+                  Амортизаторы, крепления, блок цилиндров, корпуса воздушного
+                  фильтра, прокладки, сальники и т.д. А также все, что касается
+                  зажигания, сцепления, трансмиссии и уплотнения.
+                </p>
+              </div>
+            </div>
+            <div
+              class="types__card wow animate__animated animate__fadeInRight"
+              data-wow-delay="0.2s"
+              data-wow-duration="1s"
+            >
+              <div class="types__card-icon">
+                <img loading="lazy" src="./img/bumper.png" />
+              </div>
+              <div class="types__card-body">
+                <h3 class="types__card-title">ДЕТАЛИ КУЗОВА</h3>
+                <p class="types__card-description">
+                  Бамперы, двери, ручки, зеркала, капоты, крылья, оптика,
+                  решетки и т.д.
+                </p>
+              </div>
+            </div>
+            <div
+              class="types__card wow animate__animated animate__fadeInLeft"
+              data-wow-delay="0.6s"
+              data-wow-duration="1s"
+            >
+              <div class="types__card-icon">
+                <img loading="lazy" src="./img/car-battery.png" />
+              </div>
+              <div class="types__card-body">
+                <h3 class="types__card-title">ЭЛЕКТРОНИКА</h3>
+                <p class="types__card-description">
+                  Автолампы, аккумуляторы, генераторы, датчики, предохранители,
+                  стартеры, элементы проводки и т.д.
+                </p>
+              </div>
+            </div>
+            <div
+              class="types__card wow animate__animated animate__fadeInRight"
+              data-wow-delay="0.8s"
+              data-wow-duration="1s"
+            >
+              <div class="types__card-icon">
+                <img loading="lazy" src="./img/car-wheel.png" />
+              </div>
+              <div class="types__card-body">
+                <h3 class="types__card-title">ШИНЫ И ДИСКИ</h3>
+                <p class="types__card-description">
+                  Зимние и летние диски, легкосплавные диски, пакеты для колес.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="transportation section">
+      <div class="transportation__container">
+        <div class="transportation__inner">
+          <img loading="lazy" src="./img/auto-parts.jpg" />
+          <div class="transportation__info">
+            <p class="transportation__description">
+              С учетом бюджета и личных предпочтений каждый покупатель может
+              выбрать запчасти на авто оригинальные или изготовленные по
+              лицензии. В случае возникновения вопросов можно воспользоваться
+              помощью менеджеров. Профессионализм мастеров позволяет подобрать и
+              предложить каждому готовое решение по запросу, обычно с учетом
+              пожеланий клиента.
+              <br /><br />
+              При подборе деталей необходимо помнить, что от их качества зависит
+              не только успех ремонта, но и безопасность всех участников
+              движения.
+            </p>
+            <button class="transportation__button" onclick="scrollToSection('.order__form')">ЗАКАЗАТЬ</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="order__form order__form--dark section">
+      <div class="container">
+        <div class="order__form-inner">
+          <h2 class="order__form-title">СВЯЖИТЕСЬ С НАМИ</h2>
+          <p class="order__form-description">
+            Заполните форму, чтобы получить консультацию нашего менеджера
+          </p>
+          <form>
+            <!-- Первая группа: Имя и Телефон -->
+            <div class="form__group">
+              <div class="form__group-item">
+                <label for="name">Ваше имя*</label>
+                <input
+                  class="form__input"
+                  id="name"
+                  type="text"
+                  name="name"
+                  placeholder="Ваше имя"
+                  required
+                />
+              </div>
+              <div class="form__group-item">
+                <label for="phone">Ваш телефон*</label>
+                <input
+                  class="form__input phone-input"
+                  id="phone"
+                  type="tel"
+                  name="phone"
+                  placeholder="+7 (___) ___-__-__"
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- Вторая группа: Марка машины и Модель -->
+            <div class="form__group">
+              <div class="form__group-item">
+                <label for="car-brand">Марка машины*</label>
+                <input
+                  class="form__input"
+                  id="car-brand"
+                  type="text"
+                  name="car-brand"
+                  placeholder="Марка машины"
+                  required
+                />
+              </div>
+              <div class="form__group-item">
+                <label for="car-model">Модель*</label>
+                <input
+                  class="form__input"
+                  id="car-model"
+                  type="text"
+                  name="car-model"
+                  placeholder="Модель"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form__group">
+              <div class="form__group-comment">
+                <label for="part-description">Описание детали*</label>
+                <textarea
+                  class="form__textarea"
+                  id="part-description"
+                  name="part-description"
+                  placeholder="Описание детали"
+                  required
+                ></textarea>
+              </div>
+            </div>
+
+            <input type="hidden" name="form-type" value="auto-parts">
+
+            <div class="form__group">
+              <button class="form__button" type="submit">Отправить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="brands section">
+      <div class="container">
+        <div class="brands__inner">
+          <h2 class="brands__title">
+            МАРКИ АВТО, С КОТОРЫМИ РАБОТАЕМ ЧАЩЕ ВСЕГО
+          </h2>
+          <p class="brands__description">
+            Если Вы не нашли здесь марку для которой Вам нужны запчасти - не
+            стоит расстраиваться. Это лишь те бренды, с которыми мы работаем
+            каждый день. Наши менеджеры найдут деталь на практически любую марку
+            и модель.
+          </p>
+          <div class="brands__items">
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/abarth.png"
+                alt="abarth"
+              />
+              <span class="brands__item-name">ABARTH</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/alfa-romeo.png"
+                alt="alfa romeo"
+              />
+              <span class="brands__item-name">Alfa Romeo</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/audi.png"
+                alt="audi"
+              />
+              <span class="brands__item-name">Audi</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/bmw.png"
+                alt="bmw"
+              />
+              <span class="brands__item-name">BMW</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/bmw.png"
+                alt="bmw motorrad"
+              />
+              <span class="brands__item-name">BMW Motorrad</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/buick.png"
+                alt="buick"
+              />
+              <span class="brands__item-name">Buick</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/cadillac.png"
+                alt="cadillac"
+              />
+              <span class="brands__item-name">Cadillac</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/chevrolet.png"
+                alt="chevrolet"
+              />
+              <span class="brands__item-name">Chevrolet</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/chrysler.png"
+                alt="chrysler"
+              />
+              <span class="brands__item-name">Chrysler</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/citroen.png"
+                alt="citroen"
+              />
+              <span class="brands__item-name">Citroen</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/dacia.png"
+                alt="dacia"
+              />
+              <span class="brands__item-name">Dacia</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/daewoo.png"
+                alt="daewoo"
+              />
+              <span class="brands__item-name">Daewoo</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/dodge.png"
+                alt="dodge"
+              />
+              <span class="brands__item-name">Dodge</span>
+            </div>
+
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/fiat.png"
+                alt="fiat"
+              />
+              <span class="brands__item-name">Fiat</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/fiat.png"
+                alt="fiat professional"
+              />
+              <span class="brands__item-name">Fiat Professional</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/ford.png"
+                alt="ford"
+              />
+              <span class="brands__item-name">Ford</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/gmc.png"
+                alt="gmc"
+              />
+              <span class="brands__item-name">GMC</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/holden.png"
+                alt="holden"
+              />
+              <span class="brands__item-name">Holden</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/honda.png"
+                alt="honda"
+              />
+              <span class="brands__item-name">Honda</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/hummer.png"
+                alt="hummer"
+              />
+              <span class="brands__item-name">Hummer</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/hyundai.png"
+                alt="hyundai"
+              />
+              <span class="brands__item-name">Hyundai</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/infiniti.png"
+                alt="infiniti"
+              />
+              <span class="brands__item-name">Infiniti</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/isuzu.png"
+                alt="isuzu"
+              />
+              <span class="brands__item-name">Isuzu</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/jaguar.png"
+                alt="jaguar"
+              />
+              <span class="brands__item-name">Jaguar</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/jeep.png"
+                alt="jeep"
+              />
+              <span class="brands__item-name">Jeep</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/kia.png"
+                alt="kia"
+              />
+              <span class="brands__item-name">Kia</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/lancia.png"
+                alt="lancia"
+              />
+              <span class="brands__item-name">Lancia</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/land-rover.png"
+                alt="land-rover"
+              />
+              <span class="brands__item-name">Land Rover</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/lexus.png"
+                alt="lexus"
+              />
+              <span class="brands__item-name">Lexus</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/mazda.png"
+                alt="mazda"
+              />
+              <span class="brands__item-name">Mazda</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/mercedes-benz.png"
+                alt="mercedes-benz"
+              />
+              <span class="brands__item-name">Mercedes-Benz</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/mini.png"
+                alt="mini"
+              />
+              <span class="brands__item-name">Mini</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/mitsubishi.png"
+                alt="mitsubishi"
+              />
+              <span class="brands__item-name">Mitsubishi</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/nissan.png"
+                alt="nissan"
+              />
+              <span class="brands__item-name">Nissan</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/oldsmobile.png"
+                alt="oldsmobile"
+              />
+              <span class="brands__item-name">Oldsmobile</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/opel.png"
+                alt="opel"
+              />
+              <span class="brands__item-name">Opel</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/peugeot.png"
+                alt="peugeot"
+              />
+              <span class="brands__item-name">Peugeot</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/pontiac.png"
+                alt="pontiac"
+              />
+              <span class="brands__item-name">Pontiac</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/porsche.png"
+                alt="porsche"
+              />
+              <span class="brands__item-name">Porsche</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/ram.png"
+                alt="ram"
+              />
+              <span class="brands__item-name">Ram</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/ravon.png"
+                alt="ravon"
+              />
+              <span class="brands__item-name">Ravon</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/renault.png"
+                alt="renault"
+              />
+              <span class="brands__item-name">Renault</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/rolls-royce.png"
+                alt="rolls-royce"
+              />
+              <span class="brands__item-name">Rolls-Royce</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/saab.png"
+                alt="saab"
+              />
+              <span class="brands__item-name">Saab</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/saturn.png"
+                alt="saturn"
+              />
+              <span class="brands__item-name">Saturn</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/seat.png"
+                alt="seat"
+              />
+              <span class="brands__item-name">Seat</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/skoda.png"
+                alt="skoda"
+              />
+              <span class="brands__item-name">Skoda</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/smart.png"
+                alt="smart"
+              />
+              <span class="brands__item-name">Smart</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/ssangyong.png"
+                alt="ssangyong"
+              />
+              <span class="brands__item-name">SsangYong</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/subaru.png"
+                alt="subaru"
+              />
+              <span class="brands__item-name">Subaru</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/suzuki.png"
+                alt="suzuki"
+              />
+              <span class="brands__item-name">Suzuki</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/toyota.png"
+                alt="toyota"
+              />
+              <span class="brands__item-name">Toyota</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/vauxhall.png"
+                alt="vauxhall"
+              />
+              <span class="brands__item-name">Vauxhall</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/volkswagen.png"
+                alt="volkswagen"
+              />
+              <span class="brands__item-name">Volkswagen</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/volvo.png"
+                alt="volvo"
+              />
+              <span class="brands__item-name">Volvo</span>
+            </div>
+            <div class="brands__item">
+              <img loading="lazy"
+                class="brands__item-img"
+                src="./img/brands/zaz.png"
+                alt="zaz"
+              />
+              <span class="brands__item-name">ZAZ</span>
+            </div>
+          </div>
+          <button class="brands__toggle">Показать ещё</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__contact">
+        <h2 class="footer__contact-title">Контакты</h2>
+        <div class="footer__contact-info">
+          <div class="footer__contact-item">
+            <h3 class="footer__contact-subtitle">Телефон</h3>
+            <p class="footer__contact-description">+7 (980) 000-00-00</p>
+          </div>
+          <div class="footer__contact-item">
+            <h3 class="footer__contact-subtitle">E-MAIL</h3>
+            <p class="footer__contact-description">kalinaautogroup@gmail.com</p>
+          </div>
+          <div class="footer__contact-item">
+            <h3 class="footer__contact-subtitle">АДРЕС</h3>
+            <p class="footer__contact-description">
+              г. Казань, ул. Большая Невская, 65, офис 4
+            </p>
+          </div>
+        </div>
+        <ul class="footer__contact-list">
+          <li class="footer__contact-item">
+            <a class="footer__contact-link" href="#">
+              <img src="./img/telegram.svg" alt="telegram" />
+            </a>
+          </li>
+          <li class="footer__contact-item">
+            <a class="footer__contact-link" href="#">
+              <img src="./img/youtube.svg" alt="youtube" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__form">
+        <h2 class="footer__form-title">СВЯЖИТЕСЬ С НАМИ</h2>
+        <p class="footer__form-description">
+          Заполните форму, чтобы получить консультацию нашего менеджера
+        </p>
+        <form>
+          <div class="form__group">
+            <div class="form__group-item">
+              <label for="footer-name">Ваше имя*</label>
+              <input
+                class="form__input"
+                id="footer-name"
+                type="text"
+                name="name"
+                placeholder="Ваше имя"
+                required
+              />
+            </div>
+            <div class="form__group-item">
+              <label for="footer-phone">Ваш номер телефона*</label>
+              <input
+                class="form__input phone-input"
+                id="footer-phone"
+                type="text"
+                name="phone"
+                placeholder="+7 (___) ___-__-__"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form__group">
+            <div class="form__group-comment">
+              <label for="footer-comment">Комментарий</label>
+              <textarea
+                class="form__textarea"
+                id="footer-comment"
+                name="comment"
+                placeholder="Комментарий"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="form__group">
+            <button class="form__button" type="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <div class="modal__content">
+      <button class="modal__close" id="modalClose">&times;</button>
+      <div class="modal__form">
+        <h2 class="modal__form-title">СВЯЖИТЕСЬ С НАМИ</h2>
+        <p class="modal__form-description">
+          Заполните форму, чтобы получить консультацию нашего менеджера
+        </p>
+        <form>
+          <div class="modal__form-group">
+            <div class="modal__form-item">
+              <label for="modal-name">Ваше имя*</label>
+              <input
+                class="modal__input"
+                id="modal-name"
+                type="text"
+                name="name"
+                placeholder="Ваше имя"
+                required
+              />
+            </div>
+          </div>
+          <div class="modal__form-group">
+            <div class="modal__form-item">
+              <label for="modal-phone">Ваш номер телефона*</label>
+              <input
+                class="modal__input phone-input"
+                id="modal-phone"
+                type="text"
+                name="phone"
+                placeholder="+7 (___) ___-__-__"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="modal__form-group">
+            <div class="modal__form-item">
+              <label for="modal-budget">Примерный бюджет на покупку авто*</label>
+              <input
+                class="modal__input"
+                id="modal-budget"
+                type="text"
+                name="budget"
+                required
+                placeholder="Ориентировочная сумма"
+              />
+            </div>
+          </div>
+
+          <div class="modal__form-group">
+            <div class="modal__form-item">
+              <label for="modal-car-model">Желаемая модель авто*</label>
+              <input
+                class="modal__input"
+                id="modal-car-model"
+                type="text"
+                name="model"
+                required
+                placeholder="Желаемая модель (оставьте пустым, если не определились)"
+              />
+            </div>
+          </div>
+
+          <div class="modal__form-group">
+            <div class="modal__form-comment">
+              <label for="modal-comment">Комментарий</label>
+              <textarea
+                class="modal__textarea"
+                id="modal-comment"
+                name="comment"
+                placeholder="Комментарий"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="modal__form-group">
+            <button class="modal__button" type="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <button id="scrollToTop" class="scroll-to-top" title="Наверх">⮝</button>
+    <div class="phone-icon" id="phoneIcon">
+      <img loading="lazy" src="./img/phone.png" />
+    </div>
+
+    <div id="resultModal" class="result-modal">
+      <div class="result-modal__content">
+        <span id="resultModalClose" class="result-modal__close">&times;</span>
+        <div class="modal-result__icon">
+          <!-- Здесь можно использовать иконку FontAwesome (галочка) или встроенный SVG -->
+          <i class="fas fa-check-circle"></i>
+        </div>
+        <p id="resultModalMessage"></p>
+      </div>
+    </div>
+
+    <!-- PhoneMusk -->
+    <script src="https://unpkg.com/imask"></script>
+    <!-- WOW.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="./js/telegramSend.bundle.js"></script>
+    <script src="./js/index.bundle.js"></script>
+  </body>
+</html>

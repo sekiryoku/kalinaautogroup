@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalina Auto Group</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <div class="logo-container">
+        <a href="index.html">
+          <img class="logo" src="./img/logo.svg" alt="logo" />
+        </a>
+      </div>
+      <div class="header__menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="header__nav">
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="index.html">Главная</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="about.html">О нас</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="auto-selection.html">Авто-подбор</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link active" href="catalog.html">Каталог</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="logistics.html">Логистика</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="auto-parts.html">Запчасти</a>
+        </li>
+        <li class="header__nav-item">
+          <a
+            class="header__nav-link"
+            onclick="scrollToSection('.footer__contact')"
+            >Контакты</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+
+    <section class="hero--catalog section">
+      <div class="container">
+        <div class="hero--catalog__inner">
+          <h1
+            class="hero--catalog__title wow animate__animated animate__fadeInRight"
+            data-wow-delay="0"
+            data-wow-duration="1s"
+          >
+            Найдите идеальный вариант для себя
+          </h1>
+          <p
+            class="hero--catalog__description wow animate__animated animate__fadeInRight"
+            data-wow-delay="0.3s"
+            data-wow-duration="1s"
+          >
+            Широкий выбор автомобилей с лучшими предложениями на рынке.
+          </p>
+          <button
+            class="hero--catalog__button wow animate__animated animate__fadeInRight"
+            data-wow-delay="0.6s"
+            data-wow-duration="1s"
+            data-modal
+          >
+            Оставить заявку
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="catalog" class="section">
+        <div class="catalog-container">
+          <h2 class="section__title">Каталог автомобилей</h2>
+          <div class="catalog__grid" id="carCards"></div>
+          <button id="showMore" class="show-more">Показать ещё</button>
+        </div>
+    </section>
+
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="fullImage">
+    </div>
+      
+      
+
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__contact">
+        <h2 class="footer__contact-title">Контакты</h2>
+        <div class="footer__contact-info">
+          <div class="footer__contact-item">
+            <h3 class="footer__contact-subtitle">Телефон</h3>
+            <a class="footer__contact-description" href="tel:+79800000000">+7 (980) 000-00-00</a>
+          </div>
+          <div class="footer__contact-item">
+            <h3 class="footer__contact-subtitle">E-MAIL</h3>
+            <a class="footer__contact-description" href="mailto:kalinaautogroup@gmail.com">kalinaautogroup@gmail.com</a>
+          </div>
+          <div class="footer__contact-item">
+            <h3 class="footer__contact-subtitle">АДРЕС</h3>
+            <address class="footer__contact-description">
+              г. Казань, ул. Большая Невская, 65, офис 4
+            </address>
+          </div>
+        </div>
+        <ul class="footer__contact-list">
+          <li class="footer__contact-item">
+            <a class="footer__contact-link" href="#">
+              <img src="./img/telegram.svg" alt="telegram" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__form">
+        <h2 class="footer__form-title">СВЯЖИТЕСЬ С НАМИ</h2>
+        <p class="footer__form-description">
+          Заполните форму, чтобы получить консультацию нашего менеджера
+        </p>
+        <form>
+          <div class="form__group">
+            <div class="form__group-item">
+              <label for="footer-name">Ваше имя*</label>
+              <input
+                class="form__input"
+                id="footer-name"
+                type="text"
+                name="name"
+                placeholder="Ваше имя"
+                required
+              />
+            </div>
+            <div class="form__group-item">
+              <label for="footer-phone">Ваш номер телефона*</label>
+              <input
+                class="form__input phone-input"
+                id="footer-phone"
+                type="text"
+                name="phone"
+                placeholder="+7 (___) ___-__-__"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form__group">
+            <div class="form__group-comment">
+              <label for="footer-comment">Комментарий</label>
+              <textarea
+                class="form__textarea"
+                id="footer-comment"
+                name="comment"
+                placeholder="Комментарий"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="form__group">
+            <button class="form__button" type="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <div class="modal__content">
+      <button class="modal__close" id="modalClose">&times;</button>
+      <div class="modal__form">
+        <h2 class="modal__form-title">СВЯЖИТЕСЬ С НАМИ</h2>
+        <p class="modal__form-description">
+          Заполните форму, чтобы получить консультацию нашего менеджера
+        </p>
+        <form>
+          <div class="modal__form-group">
+            <div class="modal__form-item">
+              <label for="modal-name">Ваше имя*</label>
+              <input
+                class="modal__input"
+                id="modal-name"
+                type="text"
+                name="name"
+                placeholder="Ваше имя"
+                required
+              />
+            </div>
+          </div>
+          <div class="modal__form-group">
+            <div class="modal__form-item">
+              <label for="modal-phone">Ваш номер телефона*</label>
+              <input
+                class="modal__input phone-input"
+                id="modal-phone"
+                type="text"
+                name="phone"
+                placeholder="+7 (___) ___-__-__"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="modal__form-group">
+            <div class="modal__form-item">
+              <label for="modal-budget">Примерный бюджет на покупку авто*</label>
+              <input
+                class="modal__input"
+                id="modal-budget"
+                type="text"
+                name="budget"
+                required
+                placeholder="Ориентировочная сумма"
+              />
+            </div>
+          </div>
+
+          <div class="modal__form-group">
+            <div class="modal__form-item">
+              <label for="modal-car-model">Желаемая модель авто*</label>
+              <input
+                class="modal__input"
+                id="modal-car-model"
+                type="text"
+                name="model"
+                required
+                placeholder="Желаемая модель (оставьте пустым, если не определились)"
+              />
+            </div>
+          </div>
+
+          <div class="modal__form-group">
+            <div class="modal__form-comment">
+              <label for="modal-comment">Комментарий</label>
+              <textarea
+                class="modal__textarea"
+                id="modal-comment"
+                name="comment"
+                placeholder="Комментарий"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="modal__form-group">
+            <button class="modal__button" type="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="resultModal" class="result-modal">
+  <div class="result-modal__content">
+    <span id="resultModalClose" class="result-modal__close">&times;</span>
+    <div class="modal-result__icon">
+      <!-- Здесь можно использовать иконку FontAwesome (галочка) или встроенный SVG -->
+      <i class="fas fa-check-circle"></i>
+    </div>
+    <p id="resultModalMessage"></p>
+  </div>
+</div>
+
+
+    <button id="scrollToTop" class="scroll-to-top" title="Наверх">⮝</button>
+    <div class="phone-icon" id="phoneIcon">
+      <img loading="lazy" src="./img/phone.png" />
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
+
+    <!-- PhoneMusk -->
+    <script src="https://unpkg.com/imask"></script>
+    <!-- WOW.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="./js/openModal.js"></script>
+    <script src="./js/telegramSend.bundle.js"></script>
+    <script src="./js/index.bundle.js"></script>
+    <script src="./js/catalog.bundle.js"></script>
+  </body>
+</html>
