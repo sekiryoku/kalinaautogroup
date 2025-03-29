@@ -1,0 +1,13 @@
+{
+    "functions": {
+        "index.php": {
+            "runtime": "vercel-php@0.5.0"
+        },
+        "telegramSendler.php": {
+            "runtime": "vercel-php@0.5.0"
+        }
+    },
+    "routes": [
+        { "src": "/telegramSendler", "dest": "/telegramSendler.php" }
+    ]
+}
