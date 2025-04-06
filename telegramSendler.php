@@ -55,8 +55,8 @@ $date = new DateTime('now', new DateTimeZone('Europe/Kiev'));
 $formattedDate = $date->format('d.m.Y H:i:s');
 
 // Telegram API
-$TELEGRAM_BOT_TOKEN = "7783300880:AAEUxyMZ0BJ4hX9Cvd9-eKb0QlOdktQrFLs";
-$TELEGRAM_CHAT_ID = "458542428";
+$TELEGRAM_BOT_TOKEN = "7858549417:AAGOx3iZuSpJ2kXISW4yfho5c3i2hrptXAk";
+$TELEGRAM_CHAT_ID = "-1002582688057";
 
 // Проверяем метод запроса
 if ($_SERVER["REQUEST_METHOD"] !== "POST") {
